@@ -228,7 +228,7 @@ a:hover, a:focus {
 }
 
 .movieCardInfo h3, p {
-    text-shadow: 1px 1px 1px rgba(239, 234, 234, 0.65);
+    text-shadow: 1px 1px 1px rgba(0 0 0 / 65%);
     color: #69c7e0;
     -webkit-text-stroke: 1px rgba(0, 215, 255, 0.6);
 
@@ -317,6 +317,8 @@ a:hover, a:focus {
     border: 1px solid skyblue;
     border-radius: 25px;
     background-color: rgba(0, 255, 255, 0.19);
+    font-family: "Playwrite ZA", cursive;
+
 
 }
 

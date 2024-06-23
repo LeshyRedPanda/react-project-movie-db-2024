@@ -26,7 +26,7 @@ export const PaginationComp: FC<PaginationCompProps> = ({currentPage, totalPages
     return (
         <div className={'paginationWrap'}>
             <button className={'pagePaginationBtn'} onClick={prevPage} disabled={currentPage === 1}>
-                Prev page
+                Previous Page
             </button>
             <div className={'pageIndicatorWrap'}>
             <span className={"pageIndicator"}>
@@ -40,7 +40,7 @@ export const PaginationComp: FC<PaginationCompProps> = ({currentPage, totalPages
       </span>
             </div>
             <button className={'pagePaginationBtn'} onClick={nextPage} disabled={currentPage === totalPages}>
-                Next page
+                Next Page
             </button>
         </div>
     )
