@@ -38,8 +38,7 @@ const MoviesByGenreListComp: FC<IProps> = ({movies}) => {
                             backgroundPosition: 'center'
                         }}
                     >
-                        <p>title : {movie.title} </p>
-                        <p>release date : {movie.release_date}</p>
+                        <h2>{movie.title} </h2>
                     </div>
                 ))}
             {

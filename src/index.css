@@ -64,8 +64,12 @@ code {
 
 
 .footerComp {
-    height: 10vh;
+    min-height: 10vh;
     background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 /*temp movies ==================================================*/
@@ -204,11 +208,16 @@ code {
     /*justify-content: center;*/
     /*align-items: center;*/
 }
-.genresList{
+.genresListWrap{
     width: 22vw;
     padding: 6px;
-    border: 1px solid blue;
+    margin-top: 10px;
+
 }
+.genresLi{
+    margin-top: 10px;
+}
+
 
 /*movies by genres*/
 

@@ -37,10 +37,10 @@ const GenresPage = () => {
 
     return (
         <div className={'genresPageWrap'}>
-            <div className={'genresList'}>
+            <div className={'genresListWrap'}>
                 <ul>
                     {genres.map(genre => (
-                        <li key={genre.id}>
+                        <li key={genre.id} className={'genresLi'}>
                             <Link to={`/genres/${genre.id}`}>
                                 Genre img here: {genre.name}
                             </Link>
