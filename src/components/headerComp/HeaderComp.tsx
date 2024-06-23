@@ -9,21 +9,22 @@ const HeaderComp = () => {
                     theme Switcher
                 </span>
                 <span className={'navigationLinks'}>
-                    <Link to={'/homePage'}> home page </Link>
+                    <Link to={'/homePage'}> Home page </Link>
                 </span><br/>
                 <span className={'navigationLinks'}>
-                    <Link to={'/allMovies'}>all movies</Link>
+                    <Link to={'/allMovies'}>All movies</Link>
                 </span><br/>
                 <span className={'navigationLinks'}>
-                    <Link to={'/genres'}>genres</Link>
+                    <Link to={'/genres'}>Genres</Link>
                 </span><br/>
-                <span className={'userIcon'}>
-                    user photo and name
-                </span>
+                <div className={'userIcon'}>
+
+                </div>
+
             </div>
             <div className={'searchBar'}>
                 <span>
-                    <Link to={'/search'}>you can search any movie right here </Link>
+                    <Link to={'/search'}>↳ You can search any movie right here ↲</Link>
 
                 </span></div>
 

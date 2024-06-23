@@ -42,7 +42,7 @@ const GenresPage = () => {
                     {genres.map(genre => (
                         <li key={genre.id} className={'genresLi'}>
                             <Link to={`/genres/${genre.id}`}>
-                                Genre img here: {genre.name}
+                               {genre.name}
                             </Link>
 
                         </li>
