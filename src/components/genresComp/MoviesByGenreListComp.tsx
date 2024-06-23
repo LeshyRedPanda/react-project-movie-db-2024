@@ -53,9 +53,12 @@ const MoviesByGenreListComp: FC<IProps> = ({movies}) => {
                                  backgroundPosition: 'center'
                              }
                              }>
-                            <h3>{showMovieDetails.title}</h3>
-                            <p>{showMovieDetails.release_date}</p>
-                            <p>{showMovieDetails.popularity}</p>
+
+
+                            <h3>Release Date : {showMovieDetails.title}</h3>
+                            <p>Release Date : {showMovieDetails.release_date}</p>
+                            <p>Original Language : {showMovieDetails.original_language}</p>
+                            <p>Movie Info : </p>
                             <p>{showMovieDetails.overview}</p>
                             <StarRatingComp rating={showMovieDetails.vote_average}/>
                             <button className={'closeBtn'} onClick={handleClose}> close info</button>

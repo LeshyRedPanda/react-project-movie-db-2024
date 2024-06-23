@@ -58,9 +58,11 @@ const MovieComp: FC<IProps> = ({movie}) => {
                              }>
 
                         <h3>{movie.title}</h3>
-                        <p>{movie.release_date}</p>
-                        <p>{movie.popularity}</p>
+                        <p>Release Date : {movie.release_date}</p>
+                        <p>Original Language : {movie.original_language}</p>
+                            <p>Movie Info : </p>
                         <p>{movie.overview}</p>
+                            <p>Movie Rating : </p>
                         <StarRatingComp rating={movie.vote_average}/>
                         <button className={'closeBtn'} onClick={handleClose}> close info</button>
                         </div>
