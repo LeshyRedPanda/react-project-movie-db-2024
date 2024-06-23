@@ -15,7 +15,7 @@ const ThemeSwitcher = () => {
         border: 'none',
         cursor: 'pointer',
         borderRadius:'10px',
-        // fontFamily: ;
+        fontFamily: '"Playwrite ZA", cursive',
 
     };
 
