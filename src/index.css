@@ -30,10 +30,11 @@ a:hover, a:focus {
 .link {
     color: skyblue;
 }
+
 .header {
     min-height: 30vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(34,193,195,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(34, 193, 195, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,12 +61,14 @@ a:hover, a:focus {
     margin-right: 120px;
 
 }
-.themeBtn{
+
+.themeBtn {
     padding: 6px;
     border-radius: 10px;
 }
+
 /*search bar ===============================================*/
-.searchBarWrap{
+.searchBarWrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +87,8 @@ a:hover, a:focus {
     font-size: large;
     text-decoration: none;
 }
-.searchBarComp{
+
+.searchBarComp {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +97,8 @@ a:hover, a:focus {
     border-radius: 10px;
     background: #003030;
 }
-.searchInput{
+
+.searchInput {
     padding: 10px;
     background: rgba(29, 37, 37, 0.62);
     border-radius: 5px;
@@ -105,12 +110,13 @@ a:hover, a:focus {
 .userIcon {
     width: 50px;
     height: 50px;
-    background-image:url('images/user-icon/userIcon1.png');
+    background-image: url('images/user-icon/userIcon1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 180px;
 }
+
 /*components ==================================================*/
 .homeCompWrap {
     width: 100%;
@@ -120,8 +126,6 @@ a:hover, a:focus {
     background-size: cover;
     background-position: center;
 }
-
-
 
 
 /*temp movies ==================================================*/
@@ -179,7 +183,9 @@ a:hover, a:focus {
 }
 
 .movieCard h3 {
-    background: rgba(136, 150, 202, 0.56);
+    /*background: rgba(136, 150, 202, 0.56);*/
+    background-color: rgba(0, 255, 255, 0.19);
+
     border-radius: 15px;
     padding: 5px;
 }
@@ -212,7 +218,8 @@ a:hover, a:focus {
     }
 
 }
-.movieCardInfo h3,p{
+
+.movieCardInfo h3, p {
     text-shadow: 1px 1px 1px rgba(239, 234, 234, 0.65);
     color: #69c7e0;
     -webkit-text-stroke: 1px rgba(0, 215, 255, 0.6);
@@ -220,8 +227,7 @@ a:hover, a:focus {
 }
 
 
-
-.movieCardInfoBg{
+.movieCardInfoBg {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -242,11 +248,11 @@ a:hover, a:focus {
     position: absolute;
     top: 5px;
     right: 5px;
-   border-radius: 15px;
+    border-radius: 15px;
     cursor: pointer;
     background: rgb(13, 131, 157);
     padding: 10px;
-    margin:10px 10px 0 0;
+    margin: 10px 10px 0 0;
     font-size: large;
 }
 
@@ -428,14 +434,15 @@ a:hover, a:focus {
 
 .footerComp {
     min-height: 10vh;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,0,0,1) 96%);
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(0, 0, 0, 1) 96%);
     display: flex;
     justify-content: space-around;
-    align-items:center;
-    padding: 40px 0 0 0 ;
+    align-items: center;
+    padding: 40px 0 0 0;
 
 }
+
 .footerLogo {
     opacity: 0.7;
     width: 100px;
@@ -449,26 +456,29 @@ a:hover, a:focus {
     margin-right: 40px;
 
 }
-.footerDiv{
+
+.footerDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin: 0;
 }
-.footerDiv h2,p{
+
+.footerDiv h2, p {
     margin: 8px;
     cursor: pointer;
 }
 
 /*dark theme =====================================================*/
-.dark-theme  .header{
-    border: 1px solid red ;
+.dark-theme .header {
+    border: 1px solid red;
     background-color: #333;
     color: #ffffff;
 
 }
+
 .dark-theme .navigationLinks a {
-    border: 1px solid red ;
+    border: 1px solid red;
     color: red;
 }
