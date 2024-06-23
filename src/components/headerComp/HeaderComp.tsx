@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {FC, useContext} from 'react';
 import {Link} from "react-router-dom";
 import ThemeSwitcher from "../../themeSwitcher/themeSwitcher";
 
+
+
 const HeaderComp = () => {
+    // const { isDarkTheme } = useContext(ThemeContext);
+
     return (
+        // <div className={`header ${isDarkTheme ? 'dark-theme' : ''}`}>
         <div className={'header'}>
             <div className={'navigation'}>
                 <span className={'themeSwitcher'}>
@@ -19,7 +24,6 @@ const HeaderComp = () => {
                     <Link to={'/genres'}>Genres</Link>
                 </span><br/>
                 <div className={'userIcon'}>
-
                 </div>
 
             </div>

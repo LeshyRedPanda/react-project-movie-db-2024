@@ -26,3 +26,21 @@ const ThemeSwitcher = () => {
 };
 
 export default ThemeSwitcher;
+
+// import React, {FC, useState} from 'react';
+//
+// interface IProps {
+//     toggleTheme:()=>void,
+//
+// }
+//
+// const ThemeSwitcher:FC<IProps> = ({ toggleTheme})=> {
+//     return (
+//         <button onClick={toggleTheme}>
+//             Toggle Theme
+//         </button>
+//     );
+// };
+//
+// export default ThemeSwitcher;
+

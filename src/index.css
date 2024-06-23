@@ -113,7 +113,7 @@ a:hover, a:focus {
 /*components ==================================================*/
 .homeCompWrap {
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
@@ -460,8 +460,14 @@ a:hover, a:focus {
     cursor: pointer;
 }
 
-/*dark theme*/
-.dark-theme {
-    background-color: #333333;
+/*dark theme =====================================================*/
+.dark-theme  .header{
+    border: 1px solid red ;
+    background-color: #333;
     color: #ffffff;
+
+}
+.dark-theme .navigationLinks a {
+    border: 1px solid red ;
+    color: red;
 }
