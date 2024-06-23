@@ -98,6 +98,7 @@ a:hover, a:focus {
     background: rgba(29, 37, 37, 0.62);
     border-radius: 5px;
     height: 20px;
+    color: #fff;
 }
 
 /*user icon */
