@@ -13,8 +13,13 @@ const MoviesByGenreListComp: FC<IProps> = ({movies}) => {
     const [showMovieDetails, setShowMovieDetails] = useState<IMovieModel | null>(null);
 
     const toggleDetails = (movie: IMovieModel) => {
-        setShowMovieDetails(movie)
+        if (showMovieDetails && showMovieDetails.id === movie.id) {
+            setShowMovieDetails(null);
+        } else {
+            setShowMovieDetails(movie);
+        }
     }
+
 
     const handleClose = () => {
         setShowMovieDetails(null)
@@ -71,3 +76,4 @@ const MoviesByGenreListComp: FC<IProps> = ({movies}) => {
 };
 
 export default MoviesByGenreListComp;
+

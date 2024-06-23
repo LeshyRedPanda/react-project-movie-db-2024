@@ -46,9 +46,12 @@ const SearchMoviesComp = () => {
 
     return (
         <div>
-            <div className={'searchBar'}>
-                <input type="text" value={query} onChange={(e) => setQuery(e.target.value)}
+            <div className={'searchBarWrap'}>
+            <div className={'searchBarComp'}>
+                <input className={'searchInput'} type="text" value={query} onChange={(e) => setQuery(e.target.value)}
                        placeholder={'Search a movie '}/>
+            </div>
+
             </div>
             <div className={'searchMovieWrap'}>
 
