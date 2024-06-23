@@ -3,11 +3,10 @@ import {IMovieModel} from "../../models/IMovieModel";
 import {defaultImageUrl} from "../../constantst/urls";
 
 interface IProps {
-    movie: IMovieModel,
+    movie: IMovieModel
 }
 
-const MovieComp: FC<IProps> = ({movie}) => {
-    // console.log(movie.id)
+const SearchResultComp: FC<IProps> = ({movie}) => {
     let {
         id, genre_ids,
         title, original_title,
@@ -18,12 +17,10 @@ const MovieComp: FC<IProps> = ({movie}) => {
         overview, backdrop_path,
         video
     } = movie;
-    // console.log(total_pages)
-
+    // console.log(movie)
 
     //background image
     const imageUrl = backdrop_path ? `https://image.tmdb.org/t/p/w500${backdrop_path}` : defaultImageUrl;
-
 
     //show movie info div
     const [showDetails, setShowDetails] = useState(false);
@@ -40,9 +37,7 @@ const MovieComp: FC<IProps> = ({movie}) => {
     return (
         <div className={'movieCardWrap'}>
             <div className={'movieCard'} onClick={toggleDetails} style={{backgroundImage: `url(${imageUrl})`}}>
-                <span>{movie.title}</span>
-
-
+                <h2>{movie.title}</h2>
             </div>
             {
                 showDetails && (
@@ -53,12 +48,10 @@ const MovieComp: FC<IProps> = ({movie}) => {
                         <p>{movie.popularity}</p>
                         <p>{movie.overview}</p>
                         <button className={'closeBtn'} onClick={handleClose}> close info</button>
-
                     </div>
                 )}
         </div>
     );
 };
 
-export default MovieComp;
-
+export default SearchResultComp;

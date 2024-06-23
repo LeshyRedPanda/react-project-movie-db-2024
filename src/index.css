@@ -1,13 +1,274 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* temp styles */
+
+/*header ==================================================*/
+.header {
+    min-height: 30vh;
+    background-color: cadetblue;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navigationLinks {
+    margin: 20px;
+}
+
+.userIcon {
+    margin-left: 120px
+}
+
+.themeSwitcher {
+    margin-right: 120px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.userIcon {
+    width: 80px;
+    height: 80px;
+    background-image: url("images/user-icon/user-icon-daily-theme.jpg");
+    background-size: cover;
+}
+
+/*components ==================================================*/
+.homeCompWrap {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+.footerComp {
+    height: 10vh;
+    background-color: cadetblue;
+}
+
+/*temp movies ==================================================*/
+
+.moviesPageWrap {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.allMoviesCompWrap {
+    min-width: 90vw;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movieCardWrap {
+    width: 260px;
+    min-height: 290px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+    background-size: cover;
+}
+
+.movieCard {
+    width: 260px;
+    min-height: 290px;
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(25% - 10px);
+    justify-content: center;
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color:skyblue;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    cursor: pointer;
+
+}
+/* movie info new card position z-index: 1 */
+.movieCardInfo {
+    width: 80vw;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    opacity: 0;
+    animation: show 0.7s forwards;
+}
+
+@keyframes show {
+  to{
+   opacity:0.9;
+      transform: scale(1) translate(-50%,-50%);
+      background: skyblue;
+}
+
+}
+
+.closeBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*card by genre */
+.movieCardByGenre{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+}
+/* pagination =========================================================*/
+.paginationWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pageIndicatorWrap{
+    min-width: 60px;
+}
+
+.pagePaginationBtn {
+    min-width: 50px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:10px ;
+    padding: 8px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
+    border: 1px solid skyblue;
+    border-radius: 25px;
+    background-color: rgba(0, 255, 255, 0.19);
+
+}
+
+.paginationIndicator {
+    margin: 4px;
+}
+
+.currentPage {
+    color: #ff0404;
+}
+
+/* Movies by genre comp*/
+
+
+.genresPageWrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+.genresList{
+    width: 22vw;
+    padding: 6px;
+    border: 1px solid blue;
+}
+
+/*movies by genres*/
+
+.moviesByGenreCompWrap {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.moviesByGenrePageWrap{
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.moviesByGenreListWrap{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.movieCardByGenre{
+    min-height: 120px;
+    flex: 1 1 calc(25% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color:skyblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*searchPage ==========================================================*/
+
+.searchPageWrap{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchMovieWrap{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*errorPageWrap ==========================================================*/
+.errorPageWrap{
+    background-color: #ba284a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

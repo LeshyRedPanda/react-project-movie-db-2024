@@ -1,9 +1,14 @@
 import React from 'react';
+import HeaderComp from "../headerComp/HeaderComp";
+import {Outlet} from "react-router-dom";
+import FooterComp from "../footerComp/FooterComp";
 
 const MainComp = () => {
     return (
         <div>
-            <p>main comp</p>
+            <HeaderComp/>
+            <Outlet/>
+            <FooterComp/>
         </div>
     );
 };
