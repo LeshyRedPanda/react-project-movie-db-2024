@@ -4,7 +4,6 @@ import {useAppDispatch, useAppSelector} from "../../redux_slices/store";
 import {movieActions} from "../../redux_slices/movieSlice";
 import MoviesByGenreListComp from "./MoviesByGenreListComp";
 import {PaginationComp} from "../pagination/PaginationComp";
-import {IMovieModel} from "../../models/IMovieModel";
 
 
 const MoviesByGenreComp = () => {
@@ -46,8 +45,10 @@ const MoviesByGenreComp = () => {
             <div className={'moviesByGenrePageWrap'}>
                 <MoviesByGenreListComp movies={movies}/>
             </div>
+            <div className={'moviesByGenrePaginationWrap'}>
             <div className={'genresPagePaginationBtn'}>
                 <PaginationComp currentPage={currentPage} totalPages={total_pages} pageChange={handlePageChange}/>
+            </div>
             </div>
 
         </div>

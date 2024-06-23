@@ -1,6 +1,7 @@
 import React, {FC, useState} from 'react';
 import {IMovieModel} from "../../models/IMovieModel";
 import {defaultImageUrl} from "../../constantst/urls";
+import StarRatingComp from "../star-rating/StarRetingComp";
 
 interface IProps {
     movies: IMovieModel[],
@@ -56,6 +57,7 @@ const MoviesByGenreListComp: FC<IProps> = ({movies}) => {
                             <p>{showMovieDetails.release_date}</p>
                             <p>{showMovieDetails.popularity}</p>
                             <p>{showMovieDetails.overview}</p>
+                            <StarRatingComp rating={showMovieDetails.vote_average}/>
                             <button className={'closeBtn'} onClick={handleClose}> close info</button>
 
                         </div>

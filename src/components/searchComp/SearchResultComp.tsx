@@ -1,6 +1,7 @@
 import React, {FC, useState} from 'react';
 import {IMovieModel} from "../../models/IMovieModel";
 import {defaultImageUrl} from "../../constantst/urls";
+import StarRatingComp from "../star-rating/StarRetingComp";
 
 interface IProps {
     movie: IMovieModel
@@ -43,11 +44,21 @@ const SearchResultComp: FC<IProps> = ({movie}) => {
                 showDetails && (
 
                     <div className={'movieCardInfo'}>
+                        <div className={'movieCardInfoBg'}
+                             style={{
+                                 backgroundImage: `url(${imageUrl})`,
+                                 backgroundSize: 'cover',
+                                 backgroundPosition: 'center'
+                             }
+                             }>
+
                         <h3>{movie.title}</h3>
                         <p>{movie.release_date}</p>
                         <p>{movie.popularity}</p>
                         <p>{movie.overview}</p>
+                        <StarRatingComp rating={movie.vote_average}/>
                         <button className={'closeBtn'} onClick={handleClose}> close info</button>
+                        </div>
                     </div>
                 )}
         </div>

@@ -20,6 +20,7 @@ code {
 .header {
     min-height: 30vh;
     background-color: cadetblue;
+
 }
 
 .navigation {
@@ -47,6 +48,7 @@ code {
     justify-content: center;
     margin: 20px;
 }
+
 .userIcon {
     width: 80px;
     height: 80px;
@@ -59,8 +61,6 @@ code {
     width: 100%;
     height: 100vh;
 }
-
-
 
 
 .footerComp {
@@ -112,7 +112,7 @@ code {
     margin: 5px;
     box-sizing: border-box;
     padding: 10px;
-    background-color:skyblue;
+    background-color: skyblue;
     background-size: cover;
     background-position: center;
     border-radius: 5px;
@@ -121,65 +121,104 @@ code {
     cursor: pointer;
 
 }
+
 /* movie info new card position z-index: 1 */
 .movieCardInfo {
-    width: 80vw;
-    height: 80vh;
+    width: 60vw;
+    height: 60vh;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
     border: 1px solid #ccc;
     z-index: 1;
     opacity: 0;
     animation: show 0.7s forwards;
+
 }
+
 
 @keyframes show {
-  to{
-   opacity:0.9;
-      transform: scale(1) translate(-50%,-50%);
-      background: skyblue;
-}
+    to {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+        background: skyblue;
+    }
 
 }
+.movieCardInfoBg{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
-.closeBtn{
+
+.closeBtn {
     position: absolute;
     top: 5px;
     right: 5px;
-    background-color: transparent;
     border: none;
     cursor: pointer;
+    background: rgb(13, 131, 157);
+    padding: 10px;
+    margin:10px 10px 0 0;
 }
 
 /*card by genre */
-.movieCardByGenre{
+.movieCardByGenre {
     height: 200px;
     background-size: cover;
     background-position: center;
 
 }
+
+/*star rating  =========================================================*/
+.starRating {
+    display: flex;
+    background: silver;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.star {
+    font-size: 20px;
+    color: #FFD700;
+    margin-right: 2px;
+}
+
+.starEmpty {
+    color: #E0E0E0;
+}
+
+
 /* pagination =========================================================*/
-.paginationWrap{
+.paginationWrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pageIndicatorWrap{
+
+.pageIndicatorWrap {
     min-width: 60px;
 }
 
 .pagePaginationBtn {
     min-width: 50px;
-    min-height: 40vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin:10px ;
+    margin: 10px;
     padding: 8px;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -208,14 +247,17 @@ code {
     /*justify-content: center;*/
     /*align-items: center;*/
 }
-.genresListWrap{
+
+.genresListWrap {
     width: 22vw;
     padding: 6px;
     margin-top: 10px;
 
 }
-.genresLi{
+
+.genresLi {
     margin-top: 10px;
+    padding: 6px;
 }
 
 
@@ -229,7 +271,7 @@ code {
 }
 
 
-.moviesByGenrePageWrap{
+.moviesByGenrePageWrap {
     width: 60vw;
     display: flex;
     justify-content: center;
@@ -237,28 +279,36 @@ code {
     flex-direction: row;
 }
 
-.moviesByGenreListWrap{
+.moviesByGenreListWrap {
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
-.movieCardByGenre{
+
+.movieCardByGenre {
     min-height: 120px;
     flex: 1 1 calc(25% - 10px);
     margin: 5px;
     box-sizing: border-box;
     padding: 10px;
-    background-color:skyblue;
+    background-color: skyblue;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/*genres pagination btn*/
+
+.moviesByGenrePaginationWrap {
+    display: flex;
+    align-items: center;
+}
+
 /*searchPage ==========================================================*/
 
-.searchPageWrap{
+.searchPageWrap {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -266,7 +316,7 @@ code {
     align-items: center;
 }
 
-.searchMovieWrap{
+.searchMovieWrap {
     min-width: 100%;
     display: flex;
     justify-content: center;
@@ -275,7 +325,7 @@ code {
 }
 
 /*errorPageWrap ==========================================================*/
-.errorPageWrap{
+.errorPageWrap {
     background-color: #ba284a;
     display: flex;
     align-items: center;
