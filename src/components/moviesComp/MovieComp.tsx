@@ -41,7 +41,7 @@ const MovieComp: FC<IProps> = ({movie}) => {
     return (
         <div className={'movieCardWrap'}>
             <div className={'movieCard'} onClick={toggleDetails} style={{backgroundImage: `url(${imageUrl})`}}>
-                <span>{movie.title}</span>
+                <h3>More info here: {movie.title}</h3>
 
 
             </div>

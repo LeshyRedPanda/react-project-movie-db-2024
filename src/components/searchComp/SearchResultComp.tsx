@@ -38,7 +38,7 @@ const SearchResultComp: FC<IProps> = ({movie}) => {
     return (
         <div className={'movieCardWrap'}>
             <div className={'movieCard'} onClick={toggleDetails} style={{backgroundImage: `url(${imageUrl})`}}>
-                <h2>{movie.title}</h2>
+                <h3>More info here: {movie.title} </h3>
             </div>
             {
                 showDetails && (
