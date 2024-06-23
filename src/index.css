@@ -53,10 +53,18 @@ a:hover, a:focus {
     margin: 20px;
 }
 
+/*theme switcher ========================================================*/
 
 .themeSwitcher {
+
     margin-right: 120px;
+
 }
+.themeBtn{
+    padding: 6px;
+    border-radius: 10px;
+}
+/*search bar ===============================================*/
 .searchBarWrap{
     display: flex;
     justify-content: center;
@@ -450,4 +458,10 @@ a:hover, a:focus {
 .footerDiv h2,p{
     margin: 8px;
     cursor: pointer;
+}
+
+/*dark theme*/
+.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
 }

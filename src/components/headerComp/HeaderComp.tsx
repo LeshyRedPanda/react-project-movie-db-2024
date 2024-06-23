@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import ThemeSwitcher from "../../themeSwitcher/themeSwitcher";
 
 const HeaderComp = () => {
     return (
         <div className={'header'}>
             <div className={'navigation'}>
                 <span className={'themeSwitcher'}>
-                    theme Switcher
+                    <ThemeSwitcher/>
                 </span>
                 <span className={'navigationLinks'}>
                     <Link to={'/homePage'}> Home page </Link>
@@ -27,6 +28,7 @@ const HeaderComp = () => {
                     <Link to={'/search'}>↳ You can search any movie right here ↲</Link>
 
                 </span></div>
+
 
         </div>
     );
